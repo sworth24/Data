@@ -6,35 +6,6 @@ import pandas as pd
 import openpyxl
 
 
-def remove_word(x):
-    z=x.split()
-    new_word=[]
-    for word in z:
-        if word!= 'cat':
-            new_word.append(word)
-    print(new_word)
-
-y= 'There was a cat called toffee'
-
-
-def print_rest_word(x):
-    words=x.split()
-    new_word=[]
-    found_cat = False
-    for i in range(len(words)):
-        if found_cat:
-            new_word.append(words[i])
-        elif words[i] == 'cat':
-            found_cat = True
-    print(new_word)
-
-
-def print_word_after_cat(x):
-    words=x.split()
-    for i in range(len(words)):
-        if words[i] == 'cat' and i < len(words) - 1:
-            print(words[i +1])
-            return
 
 
 pdf_dir  = r"C:\Users\sworthington\OneDrive - Warner Bros. Discovery\IQ Vision\Vendor Spreadsheet checks\NamingConventionStages"
